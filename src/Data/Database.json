@@ -1,0 +1,74 @@
+{
+    "products":[
+        {
+            "id":1,
+            "img_url":"images/pr1",
+            "title":"ice coffe",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        },
+        {
+            "id":2,
+            "img_url":"images/pr1",
+            "title":"coffe",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        },
+        {
+            "id":3,
+            "img_url":"images/pr1",
+            "title":"tea",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        },
+        {
+            "id":4,
+            "img_url":"images/pr1",
+            "title":"MilkShake",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        },
+        {
+            "id":5,
+            "img_url":"images/pr1",
+            "title":"Cake",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        },
+        {
+            "id":6,
+            "img_url":"images/pr1",
+            "title":"Bread",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        },
+        {
+            "id":7,
+            "img_url":"images/pr1",
+            "title":"Bread",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        },
+        {
+            "id":8,
+            "img_url":"images/pr1",
+            "title":"Bread",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        },
+        {
+            "id":9,
+            "img_url":"images/pr1",
+            "title":"Bread",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        },
+        {
+            "id":9,
+            "img_url":"images/pr1",
+            "title":"Bread",
+            "discription":"this ice coffe is made up only coffe and milk",
+            "price":2
+        }
+    ]
+}
