@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/coffe_shop/static/css/main.638e13dc.css",
-    "main.js": "/coffe_shop/static/js/main.4ef3d1e3.js",
-    "static/js/787.02b2344c.chunk.js": "/coffe_shop/static/js/787.02b2344c.chunk.js",
-    "static/media/sliderBanner.jpg": "/coffe_shop/static/media/sliderBanner.df171f8f204e6b1e70ea.jpg",
-    "static/media/dishes.png": "/coffe_shop/static/media/dishes.5986f6920768af32f633.png",
-    "static/media/back.png": "/coffe_shop/static/media/back.90d7012c6c08cbc72bf0.png",
-    "static/media/tableImg.png": "/coffe_shop/static/media/tableImg.0ae6af4ca5fae1ed5b3d.png",
-    "static/media/background.jpg": "/coffe_shop/static/media/background.b5434840f3414e5b13fa.jpg",
-    "static/media/pr1.jpg": "/coffe_shop/static/media/pr1.bd78526abaff8847441c.jpg",
-    "static/media/pr2.jpg": "/coffe_shop/static/media/pr2.d8570c59d06c02df6c81.jpg",
-    "static/media/pr4.jpg": "/coffe_shop/static/media/pr4.ac98f95b9c2fbbfd5ba0.jpg",
-    "static/media/cake.png": "/coffe_shop/static/media/cake.25fb21389ff763b6c70c.png",
-    "static/media/dishesBackground.png": "/coffe_shop/static/media/dishesBackground.74ee101023eaf7fee978.png",
-    "static/media/iceCoffe.jpg": "/coffe_shop/static/media/iceCoffe.249beaab55557dea1d91.jpg",
-    "static/media/tea.jpg": "/coffe_shop/static/media/tea.a4ca3c621b55dc546d6d.jpg",
-    "static/media/coffe.jpg": "/coffe_shop/static/media/coffe.ed163640fe6c1d8f53c4.jpg",
-    "index.html": "/coffe_shop/index.html",
-    "main.638e13dc.css.map": "/coffe_shop/static/css/main.638e13dc.css.map",
-    "main.4ef3d1e3.js.map": "/coffe_shop/static/js/main.4ef3d1e3.js.map",
-    "787.02b2344c.chunk.js.map": "/coffe_shop/static/js/787.02b2344c.chunk.js.map"
+    "main.css": "/static/css/main.638e13dc.css",
+    "main.js": "/static/js/main.cfac3a6c.js",
+    "static/js/787.02b2344c.chunk.js": "/static/js/787.02b2344c.chunk.js",
+    "static/media/sliderBanner.jpg": "/static/media/sliderBanner.df171f8f204e6b1e70ea.jpg",
+    "static/media/dishes.png": "/static/media/dishes.5986f6920768af32f633.png",
+    "static/media/back.png": "/static/media/back.90d7012c6c08cbc72bf0.png",
+    "static/media/tableImg.png": "/static/media/tableImg.0ae6af4ca5fae1ed5b3d.png",
+    "static/media/background.jpg": "/static/media/background.b5434840f3414e5b13fa.jpg",
+    "static/media/pr1.jpg": "/static/media/pr1.bd78526abaff8847441c.jpg",
+    "static/media/pr2.jpg": "/static/media/pr2.d8570c59d06c02df6c81.jpg",
+    "static/media/pr4.jpg": "/static/media/pr4.ac98f95b9c2fbbfd5ba0.jpg",
+    "static/media/cake.png": "/static/media/cake.25fb21389ff763b6c70c.png",
+    "static/media/dishesBackground.png": "/static/media/dishesBackground.74ee101023eaf7fee978.png",
+    "static/media/iceCoffe.jpg": "/static/media/iceCoffe.249beaab55557dea1d91.jpg",
+    "static/media/tea.jpg": "/static/media/tea.a4ca3c621b55dc546d6d.jpg",
+    "static/media/coffe.jpg": "/static/media/coffe.ed163640fe6c1d8f53c4.jpg",
+    "index.html": "/index.html",
+    "main.638e13dc.css.map": "/static/css/main.638e13dc.css.map",
+    "main.cfac3a6c.js.map": "/static/js/main.cfac3a6c.js.map",
+    "787.02b2344c.chunk.js.map": "/static/js/787.02b2344c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.638e13dc.css",
-    "static/js/main.4ef3d1e3.js"
+    "static/js/main.cfac3a6c.js"
   ]
 }
