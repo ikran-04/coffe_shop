@@ -1,5 +1,3 @@
-// import '../images'
-import ImgHero from '../images/back.png'
 import  '../styles/allCss.css'
 const Hero = () => {
     return ( 
@@ -13,7 +11,7 @@ const Hero = () => {
                  <button className='subsBtn'>Subscribe Now</button>
             </div>
             <div className="img">
-                <img src={ImgHero} alt="" />
+                <img src="images/back.png"alt="" />
             </div>
         </dev>
      );

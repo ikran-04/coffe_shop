@@ -1,7 +1,4 @@
 // import {react} from 'react'
-import tableImg from '../images/tables/tableImg.png';
-import dishesBack from '../images/tables/dishesBackground.png';
-import dishes from '../images/tables/dishes.png';
 import {BsArrowRight} from"react-icons/bs"
 
 import  '../styles/allCss.css'
@@ -19,12 +16,12 @@ const Tables = () => {
                     <button>Order Now</button>
                 </div>
                 <div className='col-2'>
-                   <img src={tableImg} alt="" />
+                   <img src="images/tables/table.jpg"alt="" />
                 </div>
             </div>
-            <div className="dishes" style={{backgroundImage: `url(${dishesBack})` ,width: '100%',height: '50%'}}>
+            <div className="dishes" style={{backgroundImage: `url(images/tables/dishesBackground.png)` ,width: '100%',height: '50%'}}>
                 <div className='dishe'>
-                    <img src={dishes} alt="" />
+                    <img src="images/tables/dishes.png" alt="" />
                     <button className='btn'>See All <BsArrowRight/></button>
                 </div>
             </div>

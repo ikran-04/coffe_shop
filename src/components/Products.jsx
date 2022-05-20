@@ -1,9 +1,3 @@
-import tea from '../images/coffe.jpg';
-import coffe from '../images/tea.jpg';
-import background from '../images/products/background.jpg';
-import cake from '../images/cake.png';
-import iceCoffe from '../images/iceCoffe.jpg';
-import productOne from '../images/products/pr1.jpg';
 import  '../styles/allCss.css'
 
 const Products = () => {
@@ -12,27 +6,27 @@ const Products = () => {
                 <hr/>
             <div className="topCategories">
                 <div>
-                    <img src={coffe}alt="" />
+                    <img src="images/coffe.jpg"alt="" />
                     <p>coffe</p>
                 </div>
                 <div>
-                    <img src={tea} alt="" />
+                    <img src="images/iceCoffe.jpg" alt="" />
                     <p>tea</p>
                 </div>
                 <div>
-                    <img src={cake} alt="" />
+                    <img src="images/tea.jpg" alt="" />
                     <p>cake</p>
                 </div>
                 <div>
-                    <img src={iceCoffe} alt="" />
+                    <img src="images/cake.png" alt="" />
                     <p>iceCoffe</p>
                 </div>
             </div>
             <h1 style={{textAlign:"center"}}>Popular Products</h1>
-``             <div className="pr" style={{backgroundImage: `url(${background})`,backgroundRepeat: 'no-repeat',  width: '100%',height: '50%'}}>
+``             <div className="pr" style={{backgroundImage: `url(images/products/background.jpg)`,backgroundRepeat: 'no-repeat',  width: '100%',height: '50%'}}>
                     <div className="topProducts">                
                     <div className="product">
-                        <img src={productOne} alt="" />
+                        <img src="images/products/pr5.jpg" alt="" />
                         <p>Lorem ispum super cake</p>
                         <div className="btns">
                             <button>love</button>
@@ -41,7 +35,7 @@ const Products = () => {
                     </div>
                 
                     <div className="product">
-                        <img src={productOne} alt="" />
+                        <img src="images/products/pr5.jpg" alt="" />
                         <p>Lorem ispum super cake</p>
                         <div className="btns">
                             <button>love</button>
@@ -50,7 +44,7 @@ const Products = () => {
                     </div>                
                 
                     <div className="product">
-                        <img src={productOne} alt="" />
+                        <img src="images/products/pr5.jpg" alt="" />
                         <p>Lorem ispum super cake</p>
                         <div className="btns">
                             <button>love</button>
@@ -59,7 +53,7 @@ const Products = () => {
                     </div>
                 
                     <div className="product">
-                        <img src={productOne} alt="" />
+                        <img src="images/products/pr5.jpg" alt="" />
                         <p>Lorem ispum super cake</p>
                         <div className="btns">
                             <button>love</button>
@@ -67,7 +61,7 @@ const Products = () => {
                         </div>
                     </div>
                     <div className="product">
-                        <img src={productOne} alt="" />
+                        <img src="images/products/pr5.jpg" alt="" />
                         <p>Lorem ispum super cake</p>
                         <div className="btns">
                             <button>love</button>
@@ -76,7 +70,7 @@ const Products = () => {
                     </div>
                 
                     <div className="product">
-                        <img src={productOne} alt="" />
+                        <img src="images/products/pr5.jpg" alt="" />
                         <p>Lorem ispum super cake</p>
                         <div className="btns">
                             <button>love</button>
@@ -85,7 +79,7 @@ const Products = () => {
                     </div>                
                 
                     <div className="product">
-                        <img src={productOne} alt="" />
+                        <img src="images/products/pr5.jpg" alt="" />
                         <p>Lorem ispum super cake</p>
                         <div className="btns">
                             <button>love</button>
@@ -94,7 +88,7 @@ const Products = () => {
                     </div>
                 
                     <div className="product">
-                        <img src={productOne} alt="" />
+                        <img src="images/products/pr5.jpg" alt="" />
                         <p>Lorem ispum super cake</p>
                         <div className="btns">
                             <button>love</button>
