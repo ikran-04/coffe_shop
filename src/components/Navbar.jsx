@@ -18,7 +18,7 @@ const Navbar = () => {
             </ul>
             <div className="btns">
                 <button className="shop-btn"><BsFillHandbagFill/></button>
-                <button className="search-btn"><FaSearch/></button>
+                <button className="login">Login</button>
             </div>
         </div>
      );
