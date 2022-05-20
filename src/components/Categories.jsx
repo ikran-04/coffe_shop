@@ -3,7 +3,6 @@ import banner from '../images/categories/sliderBanner.jpg';
 import productImage from '../images/products/pr4.jpg';
 import {IoIosArrowDropleft,IoIosArrowDropright,IoMdCart} from"react-icons/io" 
 import  '../styles/allCss.css'
-import Products from './Products';
 
 const Categories = () => {
     return (    

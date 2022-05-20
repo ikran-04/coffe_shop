@@ -1,4 +1,3 @@
-import react from 'react';
 import tea from '../images/coffe.jpg';
 import coffe from '../images/tea.jpg';
 import background from '../images/products/background.jpg';

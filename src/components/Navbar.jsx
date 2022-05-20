@@ -11,10 +11,10 @@ const Navbar = () => {
             <h1><BsCupFill/> coffe</h1>
             <ul className="lists">
                 <li><a href="/">home</a></li>
-                <li><a href="/Products">Products</a></li>
-                <li><a href="/Tables">Tables</a></li>
-                <li><a href="/Contact us">Contact us</a></li>
-                <li><a href="/Help">Help</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/tables">Tables</a></li>
+                <li><a href="/contact us">Contact us</a></li>
+                <li><a href="/help">Help</a></li>
             </ul>
             <div className="btns">
                 <button className="shop-btn"><BsFillHandbagFill/></button>

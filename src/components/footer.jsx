@@ -18,7 +18,7 @@ const Footer = () => {
                 <BsInstagram/>
                 <BsTwitter/>
             </div>
-            <div className="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80492.44013093942!2d45.27164543572123!3d2.0592861922847336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d58425955ce6b53%3A0xbb20eaaa52cc59d9!2sMogadishu!5e1!3m2!1sen!2sso!4v1652962705793!5m2!1sen!2sso" ></iframe>
+            <div className="map"><iframe title="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80492.44013093942!2d45.27164543572123!3d2.0592861922847336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d58425955ce6b53%3A0xbb20eaaa52cc59d9!2sMogadishu!5e1!3m2!1sen!2sso!4v1652962705793!5m2!1sen!2sso" ></iframe>
             </div>
         </div>
      );
