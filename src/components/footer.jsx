@@ -9,18 +9,9 @@ const Footer = () => {
             </div>
             <div className="links">
                 <h2>Lorems</h2>
-                <ul>
-                    <li>
                          <a href="h">About</a>
-                    </li>
-                    <li>
                          <a href="a">homw</a>
-                    </li>
-                    <li>
                          <a href="y">you</a>
-                    </li>
-                </ul>
-               
             </div>
             <div className="social-media">
                 <BsFacebook/>

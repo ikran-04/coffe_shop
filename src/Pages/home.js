@@ -1,3 +1,4 @@
+import Categories from "../components/Categories";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
 import Products from "../components/Products";
@@ -10,6 +11,7 @@ const HomePage = () => {
             <Products/>
             <Tables/>
             <Footer/>
+            
         </div>
      );
 }

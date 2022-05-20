@@ -9,9 +9,7 @@ const Hero = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                  vulputate libero et velit interdum, ac aliquet
                  consectetur adipiscing elit. Nunc
-                 vulputate libero et velit interdum, ac aliquet 
-                 consectetur adipiscing elit. Nunc
-                 vulputate libero et velit interdum, ac aliquet  </p>
+                 vulputate libero et velit interdum, ac aliquet   </p>
                  <button className='subsBtn'>Subscribe Now</button>
             </div>
             <div className="img">

@@ -1,7 +1,11 @@
+import Categories from "../components/Categories";
+import Footer from "../components/footer";
+
 const Products = () => {
     return ( 
         <div className="products">
-            <h1>hellow world</h1>
+            <Categories/>
+            <Footer/>
         </div>
      );
 }
