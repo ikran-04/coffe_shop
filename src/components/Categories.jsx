@@ -1,7 +1,12 @@
 import {IoIosArrowDropleft,IoIosArrowDropright,IoMdCart} from"react-icons/io" 
-import  '../styles/allCss.css'
+import  '../styles/allCss.css';
+// import AddToCart from "./AddToCart"
+import{useNavigate}from 'react-router-dom';
 
 const Categories = () => {
+   
+        const navigate =useNavigate()
+        navigate("/");
     return (    
         <div className="categori">
              <div className="slider">
@@ -12,6 +17,7 @@ const Categories = () => {
                  </div>
                  <div className="txt">
                      <h1>The Best Cheap Drink Tea ,Coffe</h1>
+                     <button className="watch-Now">Whatch Now</button>
                  </div>
              </div>
             <div className="categories">
@@ -46,7 +52,7 @@ const Categories = () => {
                    <h3>ICE COFFE</h3>
                    <p>Lorem ipsum dolor, sit amet consectetur </p>
                    <h3>$2</h3>
-                   <button>Add To cart <IoMdCart></IoMdCart></button>
+                   <button onClick={()=>navigate("/add")} > Add To cart <IoMdCart></IoMdCart></button>
                </div>
                <div className="prroduct">
                    <img src="images/products/pr4.jpg" alt="" />

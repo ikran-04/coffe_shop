@@ -1,4 +1,8 @@
+import {IoMdArrowDropup,IoMdArrowDropdown} from"react-icons/io" ;
+import {AiOutlineDelete} from"react-icons/ai" ;
+
 const Cart = () => {
+
     return ( 
     <div className="cart">
         <div className="orders">
@@ -14,8 +18,14 @@ const Cart = () => {
                     <p>29$</p>
                 </div>
                 <div className="quantity">
-                    <p>quantity: <button>1</button></p>
+                        <h4>quantity</h4>
+                        <button>0
+                        <div className="btns">
+                            <IoMdArrowDropup/><IoMdArrowDropdown/>
+                        </div></button>
                 </div>
+                <div className="delete"><AiOutlineDelete/></div>
+
             </div>
             <div className="item">
                 <div className="item-image">
@@ -29,8 +39,14 @@ const Cart = () => {
                     <p>29$</p>
                 </div>
                 <div className="quantity">
-                    <p>quantity: <button>1</button></p>
+                        <h4>quantity</h4>
+                        <button>0
+                        <div className="btns">
+                            <IoMdArrowDropup/><IoMdArrowDropdown/>
+                        </div></button>
                 </div>
+                <div className="delete"><AiOutlineDelete/></div>
+
             </div>
             <div className="item">
                 <div className="item-image">
@@ -44,8 +60,14 @@ const Cart = () => {
                     <p>29$</p>
                 </div>
                 <div className="quantity">
-                    <p>quantity: <button>1</button></p>
+                        <h4>quantity</h4>
+                        <button>0
+                        <div className="btns">
+                            <IoMdArrowDropup/><IoMdArrowDropdown/>
+                        </div></button>
                 </div>
+                <div className="delete"><AiOutlineDelete/></div>
+                
             </div>
         </div>
      

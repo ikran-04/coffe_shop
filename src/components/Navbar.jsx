@@ -1,6 +1,5 @@
 import React from "react";
 import {BsFillHandbagFill,BsCupFill} from"react-icons/bs"
-import {FaSearch} from"react-icons/fa"
 import  '../styles/allCss.css'
 
 // import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';

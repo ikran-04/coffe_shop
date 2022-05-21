@@ -1,4 +1,5 @@
-import  '../styles/allCss.css'
+import  '../styles/allCss.css';
+import {BiHeart,BiCartAlt} from"react-icons/bi" ;
 
 const Products = () => {
     return ( 
@@ -29,8 +30,8 @@ const Products = () => {
                         <img src="images/products/pr5.jpg" alt="" />
                         <p>Lorem ispum super cake</p>
                         <div className="btns">
-                            <button>love</button>
-                            <button>left</button>
+                            <button><BiHeart/></button>
+                            <button><BiCartAlt/></button>
                         </div>
                     </div>
                 
