@@ -1,8 +1,8 @@
-import {useEffect } from "react";
+import {useEffect, useState } from "react";
 const FetchData = () => {
-    const [data,setData]=useState([]);
+    const [data,setData]=useState();
         const getData=()=>{
-            fetch('data.json'
+            fetch('http://localhost:6000/products'
             ,{
               headers : { 
                 'Content-Type': 'application/json',
@@ -22,8 +22,6 @@ const FetchData = () => {
           useEffect(()=>{
             getData()
           },[])
-          return {data}
-     
 }
  
 export default FetchData;

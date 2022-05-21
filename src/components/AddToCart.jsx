@@ -6,11 +6,7 @@ const AddToCart = () => {
         <div className="addToCart">
             <div className="product-image">
                 <img src="images/products/pr4.jpg" alt="" />
-                {/* <div className="otherSides">
-                    <img src="images/products/pr1.jpg" alt="" />
-                    <img src="images/products/pr1.jpg" alt="" />
-                    <img src="images/products/pr1.jpg" alt="" />
-                </div> */}
+             
             </div>
             <div className="details">
                 <div className="name">
