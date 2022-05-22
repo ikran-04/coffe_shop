@@ -9,12 +9,12 @@ const Products = () => {
     const categories = data.categories;
     return (
         <div className="products">
-            <div className="topCategories">
+            <div className="categories" style={{padding:"5em 0"}}>
                 {
                     categories.map((category) => {
                         return (
 
-                            <div>
+                            <div className='category'>
                                 <img src={category.image_url} alt="" />
                                 <p>{category.categoryName}</p>
                             </div>

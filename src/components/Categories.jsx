@@ -1,6 +1,5 @@
 import { IoIosArrowDropleft, IoIosArrowDropright, IoMdCart } from "react-icons/io"
 import '../styles/allCss.css';
-// import AddToCart from "./AddToCart"
 import data from '../db.json'
 import { useNavigate } from 'react-router-dom';
 
@@ -28,7 +27,7 @@ const Categories = () => {
 
                             <div className="category">
                                 <img src={category.image_url} alt="" />
-                                <h3>{category.categoryName}</h3>
+                                <h5 className="categoryName">{category.categoryName}</h5>
                             </div>
                         )
                     })
