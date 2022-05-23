@@ -644,7 +644,9 @@ a {
 
     .prroduct {
         width: 170px;
-        height: 370px;
+        height: 320px;
+        line-height: 1;
+        text-align: center;
         /* padding: 1em 2em; */
     }
 
