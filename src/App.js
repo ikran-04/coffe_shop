@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Products from "./Pages/products";
 import AddToCart from "./components/AddToCart";
 import Cart from "./components/cart";
+import Help from "./components/help";
 // import Products from "./components/Products";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
        <Route path="/products" element={ <Products/> } />
        <Route path="/add" element={ <AddToCart/> } />
        <Route path="/cart" element={ <Cart/> } />
+       <Route path="/help" element={ <Help/> } />
        </Routes>
        </BrowserRouter>
    

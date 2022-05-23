@@ -22,6 +22,7 @@ body {
 
 h1 {
     color: #5A2A1B;
+    cursor: pointer;
 }
 
 .lists {
@@ -46,16 +47,34 @@ a {
 .login {
     width: 100px;
     height: 40px;
-    background: #5A2A1B;
-    color: white;
-    border: none;
-    border-radius: .5em;
+    position: relative;
+    outline: none;
+    border: 1px solid #303030;
+    background: #6a3c3c;
+    color: #fcf6ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+}
+.login:hover{
+    color: #6a3c3c;
+    background-color: #fcf6ff;
+    transition: all .5 step-end;
 }
 
 .shop-btn {
     border: none;
     background: none;
     color: #5A2A1B;
+}
+.menu-btn{
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
 }
 
 .Hero {
@@ -321,6 +340,7 @@ a {
     border-radius: 5em;
     background: #fff;
     border: none;
+    
 }
 
 .slider .txt {
@@ -466,6 +486,7 @@ a {
 }
 
 .addToCart .Add-to-cart {
+    cursor: pointer;
     width: 100px;
     height: 40px;
     border: none;
@@ -520,6 +541,49 @@ a {
     align-items: center;
     cursor: pointer;
 }
+.help-page{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #882a2aad;
+}
+.contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em 0;
+}
+.form input{
+    padding:.8em;
+    /* border-radius: 10em; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px  #9a9a9a;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #2B1C1C;
+    
+}
+.form button{
+    width: 150px;
+    padding: 1em;
+    background-color: #5A2A1B;
+    border: none;
+    color: white;
+    border-radius: 10em;
+
+}
 
 
 @media (max-width:1150px) {
@@ -559,8 +623,11 @@ a {
 }
 
 @media (max-width:805px) {
-    .navbar .lists {
+    .navbar .lists ,.btns{
         display: none;
+    }
+    .menu-btn{
+        display: flex;
     }
 
     .topProducts {
