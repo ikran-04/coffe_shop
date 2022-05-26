@@ -1,12 +1,46 @@
 import { IoIosArrowDropleft, IoIosArrowDropright, IoMdCart } from "react-icons/io"
 import '../styles/allCss.css';
-import data from '../db.json'
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from "react";
 
 const Categories = () => {
-    const products = data.products;
-    const categories = data.categories;
-    const navigate = useNavigate()
+    const [Categories, setCategories] = useState()
+    const [Products, setProducts] = useState()
+    // const [AddedProduct, setAddedProducts] = useState()
+
+
+
+    const getCategories = () => {
+        fetch("http://localhost:4000/categories")
+        .then((res) => {
+            return res.json()
+        }).then(categories => {
+            // console.log(categories)
+            setCategories(categories)
+        })
+    }
+
+
+    const getProducts = () => {
+        fetch("http://localhost:4000/products")
+        .then((res) => {
+            return res.json()
+        }).then(products => {
+            // console.log(products)
+            setProducts(products)
+        })
+    }
+
+    useEffect(() => {
+        getCategories()
+    }, [])
+
+    useEffect(() => {
+        getProducts()
+    }, [])
+
+    function AddToCart(){
+        // console.log(Product.id)
+    }
     return (
         <div className="categori">
             <div className="slider">
@@ -21,11 +55,11 @@ const Categories = () => {
                 </div>
             </div>
             <div className="categories">
-                {
-                    categories.map((category) => {
+                { Categories &&
+                    Categories.map((category) => {
                         return (
 
-                            <div className="category">
+                            <div className="category" key={category.id}>
                                 <img src={category.image_url} alt="" />
                                 <h5 className="categoryName">{category.categoryName}</h5>
                             </div>
@@ -35,15 +69,15 @@ const Categories = () => {
             </div>
             <div className="AllProducts">
                 {
-                    products.map((product) => {
+                    Products&& Products.map((product) => {
 
                         return (
-                            <div onClick={() => navigate("/add")} className="prroduct">
+                            <div className="prroduct">
                                 <img src={product.img_url} alt="" />
                                 <h3>{product.title}</h3>
                                 <p>{product.discription}</p>
                                 <h3>{product.price}$</h3>
-                                <button onClick={() => navigate("/add")} > Add To cart <IoMdCart></IoMdCart></button>
+                                <button onClick={AddToCart} > Add To cart <IoMdCart></IoMdCart></button>
                             </div>
                         )
                     })

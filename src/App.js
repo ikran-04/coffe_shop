@@ -11,6 +11,7 @@ import Products from "./Pages/products";
 import AddToCart from "./components/AddToCart";
 import Cart from "./components/cart";
 import Help from "./components/help";
+import Gallery from "./components/gallery";
 // import Products from "./components/Products";
 
 function App() {
@@ -19,7 +20,6 @@ function App() {
 
       <Navbar />
 
-   
      <BrowserRouter>
      <Routes >
        <Route  exact path="/"  element={<HomePage/>} />
@@ -27,6 +27,7 @@ function App() {
        <Route path="/add" element={ <AddToCart/> } />
        <Route path="/cart" element={ <Cart/> } />
        <Route path="/help" element={ <Help/> } />
+       <Route path="/gallery" element={<Gallery/> } />
        </Routes>
        </BrowserRouter>
    
