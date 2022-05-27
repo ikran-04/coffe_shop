@@ -27,6 +27,7 @@ h1 {
 
 .lists {
     display: flex;
+    justify-content: center;
     list-style: none;
 }
 
@@ -35,11 +36,11 @@ h1 {
 }
 
 a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #000;
 }
 
-.btns button {
+.nav-btns button {
     font-size: 1.3rem;
     text-align: center;
 }
@@ -89,7 +90,7 @@ a {
 .Hero .text {
     width: 40%;
     font-size: 1.2rem;
-    line-height: 2.5;
+    line-height: 2;
 }
 
 /* .Hero .img {
@@ -621,7 +622,7 @@ a {
 
 }
 .gallery{
-    max-width: 50%;
+    max-width: 80%;
     margin: auto;
     height: auto;
     display: flex;
@@ -631,11 +632,11 @@ a {
 .gallery .images{
     display: grid;
     grid-template-columns:repeat(4,1fr) ;
-    grid-gap: 2em;
+    grid-gap: 1em;
     justify-items: center;
     justify-content:center ;
     align-items: center ;
-    margin: 5em;
+    margin: 1em;
 }
 .gallery .images img{
     width: 100%;
@@ -643,13 +644,49 @@ a {
     height: 200px;
     object-fit: cover;
     transition: transform 1s ease-in;
- /* border: 10px solid rgb(38, 35, 35); */
+ border: 10px solid rgb(38, 35, 35);
 }
 .gallery .images img:hover{
-    transform: rotate(20deg);
+   opacity: .5;
 }
-
-
+.modal{
+    width: 30%;
+    height: 50%;
+    background: #ececec;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 10px #b5b5b5;
+    border-radius: 5px;
+}
+.modal form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+.modal form input {
+    height: 30px;
+}
+.modal form button{
+    margin: 1em 0;
+    height: 30px;
+    background:linear-gradient(to right, #5e2020,#964d4d);
+    color: #fff;
+    border: none;
+}
+.modal .close-btn{
+    position: absolute;
+    padding: 1em;
+    right: 0%;
+    border: none;
+    background: none;
+}
 
 @media (max-width:1150px) {
     .topProducts {
@@ -693,13 +730,6 @@ a {
 }
 
 @media (max-width:805px) {
-    .navbar .lists ,.btns{
-        display: none;
-    }
-    .menu-btn{
-        display: flex;
-    }
-
     .topProducts {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -716,6 +746,10 @@ a {
 }
 
 @media (max-width:700px) {
+    .navbar .nav-btns {
+        display: none;
+    }
+
     .footer {
         height: 70%;
         display: flex;
@@ -762,9 +796,21 @@ a {
         grid-template-columns: repeat(2, 1fr);
         
     }
+    .contain{
+        width: 100%;
+    }
 }
 
 @media (max-width:550px) {
+    .navbar{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .lists{
+        padding: 0;
+    }
     .product {
         width: 170px;
         height: 300px;
@@ -808,8 +854,8 @@ a {
 }
 @media (max-width:450px){
     .gallery .images img{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 }
 

@@ -77,13 +77,13 @@ const Categories = () => {
         <div className="categori">
             <div className="slider">
                <div>
-                    <SimpleImageSlider
+                    {/* <SimpleImageSlider
                         width={1200}
                         height={504}
                         images={images}
                         showBullets={true}
                         showNavs={true}
-                    />
+                    /> */}
              </div>
             </div>
             <div className="categories">
