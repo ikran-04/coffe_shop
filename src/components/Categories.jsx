@@ -1,10 +1,14 @@
-import { IoIosArrowDropleft, IoIosArrowDropright, IoMdCart } from "react-icons/io"
+import { IoMdCart ,IoMdSearch} from "react-icons/io";
+import SimpleImageSlider from "react-simple-image-slider";
 import '../styles/allCss.css';
 import { useEffect, useState } from "react";
+// import { faChessBishop } from "@fortawesome/free-solid-svg-icons";
 
 const Categories = () => {
     const [Categories, setCategories] = useState()
     const [Products, setProducts] = useState()
+    const [filterredProducts,setFilterredProducts]=useState()
+    const [images,setImages]=useState()
     // const [AddedProduct, setAddedProducts] = useState()
 
 
@@ -27,6 +31,16 @@ const Categories = () => {
         }).then(products => {
             // console.log(products)
             setProducts(products)
+            setFilterredProducts(products)
+        })
+    }
+    const getImages = () => {
+        fetch("http://localhost:4000/images")
+        .then((res) => {
+            return res.json()
+        }).then(images => {
+            // console.log(products)
+            setImages(images)
         })
     }
 
@@ -37,22 +51,40 @@ const Categories = () => {
     useEffect(() => {
         getProducts()
     }, [])
+    useEffect(() => {
+        getImages()
+    }, [])
 
-    function AddToCart(){
-        // console.log(Product.id)
-    }
+    // function AddToCart(id){
+        
+    //     // setAddedProducts(
+    // }
+    //searchi function handler
+    const searcgHandler= (e)=>{
+        const filteredArray=Products.filter((product)=> product.title === e.target.value);
+        console.log(filteredArray)
+        if(filteredArray.length === 0){
+           setFilterredProducts(Products)
+        }else{
+        setFilterredProducts(filteredArray)
+        console.log(filterredProducts)
+        }
+      }
+    
+   
+   
     return (
         <div className="categori">
             <div className="slider">
-                <img src="images/categories/sliderBanner.jpg" alt="" />
-                <div className="btns">
-                    <IoIosArrowDropleft />
-                    <IoIosArrowDropright />
-                </div>
-                <div className="txt">
-                    <h1>The Best Cheap Drink Tea ,Coffe</h1>
-                    <button className="watch-Now">Whatch Now</button>
-                </div>
+               <div>
+                    <SimpleImageSlider
+                        width={1200}
+                        height={504}
+                        images={images}
+                        showBullets={true}
+                        showNavs={true}
+                    />
+             </div>
             </div>
             <div className="categories">
                 { Categories &&
@@ -67,17 +99,22 @@ const Categories = () => {
                     })
                 }
             </div>
+            
             <div className="AllProducts">
+            <div className="serachProducts">
+                    <input id="search" type="text" placeholder="Search Product" onChange={searcgHandler} />
+                    <button ><IoMdSearch/></button>
+                </div>
                 {
-                    Products&& Products.map((product) => {
+                    filterredProducts && filterredProducts.map((filteredProduct) => {
 
                         return (
-                            <div className="prroduct">
-                                <img src={product.img_url} alt="" />
-                                <h3>{product.title}</h3>
-                                <p>{product.discription}</p>
-                                <h3>{product.price}$</h3>
-                                <button onClick={AddToCart} > Add To cart <IoMdCart></IoMdCart></button>
+                            <div className="prroduct" >
+                                <img src={filteredProduct.img_url} alt="" />
+                                <h3>{filteredProduct.title}</h3>
+                                <p>{filteredProduct.discription}</p>
+                                <h3>{filteredProduct.price}$</h3>
+                                <button>Add To cart <IoMdCart></IoMdCart></button>
                             </div>
                         )
                     })

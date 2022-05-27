@@ -1,17 +1,45 @@
+import{useEffect,useState} from 'react'
 import '../styles/allCss.css';
 import { BiHeart, BiCartAlt } from "react-icons/bi";
-import data from '../db.json'
 import { useNavigate } from 'react-router-dom';
+// import Categories from './Categories';
 
 const Products = () => {
     const navigate = useNavigate();
-    const products = data.products;
-    const categories = data.categories;
+    const [Categories, setCategories] = useState()
+    const [Products, setProducts] = useState()
+
+    const getProducts = () => {
+        fetch("http://localhost:4000/products")
+        .then((res) => {
+            return res.json()
+        }).then(products => {
+            // console.log(products)
+            setProducts(products)
+        })
+    }
+    const getCategories = () => {
+        fetch("http://localhost:4000/categories")
+        .then((res) => {
+            return res.json()
+        }).then(categories => {
+            // console.log(categories)
+            setCategories(categories)
+        })
+    }
+    useEffect(() => {
+        getCategories()
+    }, [])
+
+    useEffect(() => {
+        getProducts()
+    }, [])
     return (
         <div className="products">
             <div className="categories" style={{padding:"5em 0"}}>
                 {
-                    categories.map((category) => {
+                    Categories &&
+                    Categories.map((category) => {
                         return (
 
                             <div className='category'>
@@ -25,12 +53,12 @@ const Products = () => {
             <h1 style={{ textAlign: "center" }}>Popular Products</h1>
             <div className="topProducts">
                 {
-                    products.map((product) => {
+                   Products&& Products.map((product) => {
 
                         return (
 
                             <div onClick={() => navigate("/add")} className="product">
-                                <img src="images/products/pr5.jpg" alt="" />
+                                <img src={product.img_url} alt="" />
                                 <p>{product.discription}</p>
                                 <div className="btns">
                                     <button><BiHeart /></button>

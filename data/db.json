@@ -2,21 +2,21 @@
     "products":[
         {
             "id":1,
-            "img_url":"images/products/pr4.jpg",
+            "img_url":"images/products/pr1.jpg",
             "title":"ice coffe",
             "discription":"this ice coffe is made up only coffe and milk",
             "price":2
         },
         {
             "id":2,
-            "img_url":"images/products/pr4.jpg",
+            "img_url":"images/products/pr2.jpg",
             "title":"coffe",
             "discription":"this ice coffe is made up only coffe and milk",
             "price":1
         },
         {
             "id":3,
-            "img_url":"images/products/pr4.jpg",
+            "img_url":"images/products/pr3.jpg",
             "title":"tea",
             "discription":"this ice coffe is made up only coffe and milk",
             "price":1
@@ -30,42 +30,42 @@
         },
         {
             "id":5,
-            "img_url":"images/products/pr4.jpg",
+            "img_url":"images/products/pr5.jpg",
             "title":"Cake",
             "discription":"this ice coffe is made up only coffe and milk",
             "price":1
         },
         {
             "id":6,
-            "img_url":"images/products/pr3.jpg",
+            "img_url":"images/products/pr6.png",
             "title":"Bread",
             "discription":"this ice coffe is made up only coffe and milk",
             "price":1
         },
         {
             "id":7,
-            "img_url":"images/products/pr3.jpg",
+            "img_url":"images/products/pr7.jpg",
             "title":"Bread",
             "discription":"this ice coffe is made up only coffe and milk",
             "price":1
         },
         {
             "id":8,
-            "img_url":"images/products/pr3.jpg",
+            "img_url":"images/products/pr8.jpg",
             "title":"Bread",
             "discription":"this ice coffe is made up only coffe and milk",
             "price":1
         },
         {
             "id":9,
-            "img_url":"images/products/pr3.jpg",
+            "img_url":"images/products/pr9.jpg",
             "title":"Bread",
             "discription":"this ice coffe is made up only coffe and milk",
             "price":1
         },
         {
             "id":10,
-            "img_url":"images/products/pr3.jpg",
+            "img_url":"images/products/pr10.jpg",
             "title":"Bread",
             "discription":"this ice coffe is made up only coffe and milk",
             "price":1
@@ -101,17 +101,22 @@
           "id":6,
           "image_url":"images/iceCoffe.jpg",
           "categoryName":"ice Coffe"
-      },
-      {
-        "id":7,
-        "image_url":"images/iceCoffe.jpg",
-        "categoryName":"ice Coffe"
-      },
-      {
-        "id":8,
-        "image_url":"images/iceCoffe.jpg",
-        "categoryName":"ice Coffe"
       }
+    
+    ],
+    "images":[
+        {
+            "url":"images/categories/sliderBanner.jpg"
+        },
+        {
+            "url":"images/categories/banner2.jpg"
+        },
+        {
+            "url":"images/categories/banner3.jpg"
+        },
+        {
+            "url":"images/categories/banner4.jpg"
+        }
     ]
    
   }
