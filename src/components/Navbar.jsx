@@ -53,8 +53,8 @@ const Navbar = () => {
                   >
                     <button className="close-btn" onClick={closeModal}><AiOutlineClose/></button>
                     {/* <div>I am a modal</div> */}
-                    <h1 style={{textAlign:"center"}}>LOGIN</h1>
                     <form>
+                    <h1 style={{textAlign:"center"}}>LOGIN</h1>
                       <label htmlFor="email">Email or Phone</label>
                       <input type="text" name="Email" id="Email" />
                       <label htmlFor="password">Paswsord</label>

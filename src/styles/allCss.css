@@ -650,9 +650,9 @@ a {
    opacity: .5;
 }
 .modal{
-    width: 30%;
-    height: 50%;
-    background: #ececec;
+    width: 30vw;
+    height:auto;
+    background: linear-gradient(to right ,#3b1e1e,rgb(201, 93, 93));
     position: absolute;
     top: 50%;
     left: 50%;
@@ -661,6 +661,7 @@ a {
     transform: translate(-50%, -50%);
     box-shadow: 2px 2px 10px #b5b5b5;
     border-radius: 5px;
+    color: white;
 }
 .modal form{
     width: 80%;
@@ -668,7 +669,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1em;
+    padding:1em;
 }
 .modal form input {
     height: 30px;
@@ -676,9 +677,12 @@ a {
 .modal form button{
     margin: 1em 0;
     height: 30px;
-    background:linear-gradient(to right, #5e2020,#964d4d);
+    background:linear-gradient(to right, #c77878,#ffc4c4);
     color: #fff;
     border: none;
+}
+.modal h1{
+    color: #fff;
 }
 .modal .close-btn{
     position: absolute;
