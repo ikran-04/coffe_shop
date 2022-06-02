@@ -3,12 +3,12 @@ import {BsFillHandbagFill,BsCupFill} from"react-icons/bs"
 import {AiOutlineClose} from "react-icons/ai"
 import {AiOutlineBars} from"react-icons/ai"
 import Modal from 'react-modal';
-// import { useNavigate } from "react-router-dom"
 import  '../styles/allCss.css'
 
 // import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 const Navbar = () => {
+
     let subtitle;
     const [modalIsOpen, setIsOpen] = React.useState(false);
   
@@ -24,12 +24,11 @@ const Navbar = () => {
     function closeModal() {
       setIsOpen(false);
     }
-
-
+    
     return ( 
         <>
         <div className="navbar">
-            <h1><BsCupFill/> coffe</h1>
+            <h1 ><BsCupFill/> coffe</h1>
             <ul className="lists">
                 <li><a href="/">home</a></li>
                 <li><a href="/products">Products</a></li>
@@ -45,11 +44,10 @@ const Navbar = () => {
             </div>
             </div>
                   <div >
-                  <Modal className={"modal"}
+                  <Modal  className={"modal"}
                     isOpen={modalIsOpen}
                     onAfterOpen={afterOpenModal}
                     onRequestClose={closeModal}
-                    contentLabel="Example Modal"
                   >
                     <button className="close-btn" onClick={closeModal}><AiOutlineClose/></button>
                     {/* <div>I am a modal</div> */}
@@ -59,7 +57,9 @@ const Navbar = () => {
                       <input type="text" name="Email" id="Email" />
                       <label htmlFor="password">Paswsord</label>
                       <input type="password" name="password" id="password" />
+                      <a href="/">forget Password</a>
                       <button>LOGIN</button>
+                      <p  style={{textAlign:"center"}}>not a member? <a href="/registration" >SIGN UP</a></p>
                     </form>
                   </Modal>
                      </div>

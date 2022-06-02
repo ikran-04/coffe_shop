@@ -1,18 +1,30 @@
 import { IoMdCart ,IoMdSearch} from "react-icons/io";
 import SimpleImageSlider from "react-simple-image-slider";
 import '../styles/allCss.css';
-import { useEffect, useState } from "react";
-// import { faChessBishop } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState} from "react";
+
+const images = [
+    {
+        "url":"images/categories/sliderBanner.jpg"
+    },
+    {
+        "url":"images/categories/banner2.jpg"
+    },
+    {
+        "url":"images/categories/banner3.jpg"
+    },
+    {
+        "url":"images/categories/banner4.jpg"
+    }
+  ];
 
 const Categories = () => {
+    const navigate = useNavigate();
     const [Categories, setCategories] = useState()
     const [Products, setProducts] = useState()
     const [filterredProducts,setFilterredProducts]=useState()
-    const [images,setImages]=useState()
-    // const [AddedProduct, setAddedProducts] = useState()
-
-
-
+    
     const getCategories = () => {
         fetch("http://localhost:4000/categories")
         .then((res) => {
@@ -22,7 +34,6 @@ const Categories = () => {
             setCategories(categories)
         })
     }
-
 
     const getProducts = () => {
         fetch("http://localhost:4000/products")
@@ -34,16 +45,6 @@ const Categories = () => {
             setFilterredProducts(products)
         })
     }
-    const getImages = () => {
-        fetch("http://localhost:4000/images")
-        .then((res) => {
-            return res.json()
-        }).then(images => {
-            // console.log(products)
-            setImages(images)
-        })
-    }
-
     useEffect(() => {
         getCategories()
     }, [])
@@ -51,23 +52,29 @@ const Categories = () => {
     useEffect(() => {
         getProducts()
     }, [])
-    useEffect(() => {
-        getImages()
-    }, [])
 
-    // function AddToCart(id){
-        
-    //     // setAddedProducts(
-    // }
+    const addToCart = (prod) => {
+        console.log(prod)
+        fetch("http://localhost:4000/cart", {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(prod)
+        })
+        .then((res) => {
+           console.log(res)
+        })
+    }
+
     //searchi function handler
     const searcgHandler= (e)=>{
         const filteredArray=Products.filter((product)=> product.title === e.target.value);
-        console.log(filteredArray)
         if(filteredArray.length === 0){
            setFilterredProducts(Products)
         }else{
         setFilterredProducts(filteredArray)
-        console.log(filterredProducts)
         }
       }
     
@@ -78,14 +85,18 @@ const Categories = () => {
             <div className="slider">
                <div>
                     <SimpleImageSlider
-                        width={1200}
-                        height={504}
+                        width={"100%"}
+                        height={"60vh"}
                         images={images}
                         showBullets={true}
                         showNavs={true}
+
+                        
                     />
              </div>
             </div>
+
+            
             <div className="categories">
                 { Categories &&
                     Categories.map((category) => {
@@ -100,6 +111,7 @@ const Categories = () => {
                 }
             </div>
             
+            
             <div className="AllProducts">
             <div className="serachProducts">
                     <input id="search" type="text" placeholder="Search Product" onChange={searcgHandler} />
@@ -109,12 +121,14 @@ const Categories = () => {
                     filterredProducts && filterredProducts.map((filteredProduct) => {
 
                         return (
-                            <div className="prroduct" >
-                                <img src={filteredProduct.img_url} alt="" />
-                                <h3>{filteredProduct.title}</h3>
-                                <p>{filteredProduct.discription}</p>
-                                <h3>{filteredProduct.price}$</h3>
-                                <button>Add To cart <IoMdCart></IoMdCart></button>
+                            <div className="prroduct" key={filteredProduct.id} >
+                                <img src={filteredProduct.img_url} onClick={() => navigate("/add")} alt="" />
+                                <div className="Product-info">
+                                    <h3>{filteredProduct.title}</h3>
+                                    <p>{filteredProduct.discription}</p>
+                                    <h3>{filteredProduct.price}$</h3>
+                                </div>
+                                <button onClick={() => addToCart(filteredProduct)}>Add To cart <IoMdCart></IoMdCart></button>
                             </div>
                         )
                     })

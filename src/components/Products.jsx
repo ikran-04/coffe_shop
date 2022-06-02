@@ -1,9 +1,18 @@
-import{useEffect,useState} from 'react'
+import{useEffect,useState} from 'react';
 import '../styles/allCss.css';
 import { BiHeart, BiCartAlt } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom';
-// import Categories from './Categories';
+// import { json } from 'express';
 
+
+export const addToCart =(product)=>{
+    // console.log(product.id)
+    // const productId=product.id;
+    // const productImg=product.image_url;
+    // const productTitle=product.title;
+    // const productDiscription=product.discription;
+    // const productPrice=product.price;
+}
 const Products = () => {
     const navigate = useNavigate();
     const [Categories, setCategories] = useState()
@@ -34,6 +43,7 @@ const Products = () => {
     useEffect(() => {
         getProducts()
     }, [])
+    
     return (
         <div className="products">
             <div className="categories" style={{padding:"5em 0"}}>
@@ -42,7 +52,7 @@ const Products = () => {
                     Categories.map((category) => {
                         return (
 
-                            <div className='category'>
+                            <div className='category' key={category.id}>
                                 <img src={category.image_url} alt="" />
                                 <p>{category.categoryName}</p>
                             </div>
@@ -53,20 +63,18 @@ const Products = () => {
             <h1 style={{ textAlign: "center" }}>Popular Products</h1>
             <div className="topProducts">
                 {
-                   Products&& Products.map((product) => {
-
+                   Products && Products.map((product)=> {
                         return (
-
-                            <div onClick={() => navigate("/add")} className="product">
-                                <img src={product.img_url} alt="" />
+                            <div key={product.id}  className="product">
+                                <img src={product.img_url} onClick={() => navigate("/add")} alt="" />
                                 <p>{product.discription}</p>
                                 <div className="btns">
                                     <button><BiHeart /></button>
-                                    <button><BiCartAlt /></button>
+                                    <button onClick={() =>{addToCart(product)}}><BiCartAlt /></button>
                                 </div>
                             </div>
                         )
-                    })
+                    })                                                                                                                                                                                       
                 }
             </div>
         </div>

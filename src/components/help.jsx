@@ -16,7 +16,8 @@ const Help = () => {
     
 
     return ( 
-        <div className="help-page">
+        <div>
+            <div className="help-page-content">
             <h3>how we can help you</h3>
             <p>&copy; Lorem ipsum dolor sit amet consectetur.</p>
             <div className="contain">
@@ -28,6 +29,8 @@ const Help = () => {
                 </form>
                 </div>
         </div>
+        </div>
+     
      );
 }
  

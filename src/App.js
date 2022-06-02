@@ -1,18 +1,13 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
-// import {browserHistory} from "connect-history-api-fallback"
+import { BrowserRouter, Route,Routes,} from "react-router-dom";
 import HomePage from "./Pages/home";
+import HelpPage from "./Pages/hlepPage";
 import Navbar from "./components/Navbar";
 import Products from "./Pages/products";
 import AddToCart from "./components/AddToCart";
 import Cart from "./components/cart";
-import Help from "./components/help";
-import Gallery from "./components/gallery";
-// import Products from "./components/Products";
+import GalleryPage from "./Pages/Gallery";
+import Register from "./components/registration";
 
 function App() {
   return (
@@ -26,8 +21,9 @@ function App() {
        <Route path="/products" element={ <Products/> } />
        <Route path="/add" element={ <AddToCart/> } />
        <Route path="/cart" element={ <Cart/> } />
-       <Route path="/help" element={ <Help/> } />
-       <Route path="/gallery" element={<Gallery/> } />
+       <Route path="/help" element={ <HelpPage/>} />
+       <Route path="/gallery" element={<GalleryPage/> } />
+       <Route path="/registration" element={<Register/> } />
        </Routes>
        </BrowserRouter>
    

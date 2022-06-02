@@ -8,9 +8,9 @@ const AddToCart = () => {
     const found =products.find(product => product.id===1);
     const [counter, setCounter] = useState(0);
 
-    function AddToCartHandler(){
-        // const [orderedProduct,setOrderedProduct]=useState()
-    }
+    // function AddToCartHandler(){
+    //     // const [orderedProduct,setOrderedProduct]=useState()
+    // }
     function increase() {
         setCounter(count => count + 1);
       };
@@ -44,7 +44,7 @@ const AddToCart = () => {
                             <IoMdArrowDropdown onClick={()=> {decrease()}}/>
                              </div></button>
                 </div>
-                <button onClick={()=>{AddToCartHandler()}} className="Add-to-cart">Add to Cart</button>
+                <button onClick={()=>{}} className="Add-to-cart">Add to Cart</button>
             </div>
         </div>
     </div>
