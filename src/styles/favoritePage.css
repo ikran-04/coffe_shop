@@ -1,0 +1,126 @@
+body{
+    /* background:linear-gradient(to right, rgb(255, 239, 239),rgba(253, 176, 176, 0.87)); */
+
+}
+.favorites{
+    width: 80%;
+    margin: auto;
+    padding: 2em 0;
+     display: flex;
+     justify-content:space-around;
+    
+}
+.my-account{
+    padding: 1em;
+    width: 18%;
+    height:35vh;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(118, 118, 118, 0.545);
+    align-items: center;
+    background-color: #fff;
+
+}
+.profile{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.my-account ul li{
+    font-size: 1rem;
+    color: rgb(127, 75, 75);
+    padding: .7em;
+    margin: 1em 0;
+    background-color: rgba(221, 221, 221, 0.76);
+    border-radius: 5px;
+}
+.my-account ul li a{
+    /* color: #fff; */
+}
+.logout{
+    padding: .5em 1em;
+    border: none;
+    background-color: rgb(221, 141, 119);
+}
+.favorite-items{
+    width: 80%;
+    box-shadow: 2px 3px 10px hsla(0, 0%, 75%, 0.755);
+    padding: 2em;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+.fav-seacrhing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fav-seacrhing input{
+    padding:.4em 1em;
+    border-radius: 5em;
+    border: 1px solid rgb(45, 44, 44);
+    outline: none;
+}
+.favorite-products {
+    width: 100%;
+    padding: 1em;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    gap: 1em;
+}
+.favorite-products .product{
+    width: 200px;
+}
+.favorite-products .product img{
+    width: 80%;
+    height: 50%;
+}
+@media (max-width:1400px){
+    .favorites{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .my-account{
+        width: 30%;
+    }
+    .favorite-items{
+        width: 100%;
+    }
+}
+@media (max-width:1200px) {
+    .favorite-products{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .my-account{
+        width: 40%;
+    }
+}
+@media (max-width:900px) {
+    .favorite-products{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:700px) {
+    .my-account{
+        width: 80%;
+    }
+}
+@media (max-width:600px) {
+    .fav-seacrhing{
+        flex-direction: column;
+    }
+    .favorite-products{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

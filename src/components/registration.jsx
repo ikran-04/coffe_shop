@@ -36,9 +36,6 @@ const Register = () => {
            console.log(res)
         })
     }
-    // const handleSubmit  = () => {
-    //     console.log(fullName,email,password);
-    // }
     return ( 
         <div className="register">
             <div className="img">
@@ -54,7 +51,7 @@ const Register = () => {
                     <input type="checkbox" name="policy" id="policy" />
                     <label htmlFor="policy">i agree <span>terms</span>and <span>private policy</span></label>
                     </div>
-                <button type="submit" value="Submit" onClick={()=>handleSubmit()}>Register</button>
+                <button type="submit" value="Submit" onClick={()=>handleSubmit(fullName,email,password)}>Register</button>
                 </form>
 
             </div>

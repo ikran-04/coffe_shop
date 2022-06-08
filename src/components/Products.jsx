@@ -2,17 +2,7 @@ import{useEffect,useState} from 'react';
 import '../styles/allCss.css';
 import { BiHeart, BiCartAlt } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom';
-// import { json } from 'express';
-
-
-export const addToCart =(product)=>{
-    // console.log(product.id)
-    // const productId=product.id;
-    // const productImg=product.image_url;
-    // const productTitle=product.title;
-    // const productDiscription=product.discription;
-    // const productPrice=product.price;
-}
+import Cookies from "js-cookie";
 const Products = () => {
     const navigate = useNavigate();
     const [Categories, setCategories] = useState()
@@ -24,7 +14,7 @@ const Products = () => {
             return res.json()
         }).then(products => {
             // console.log(products)
-            setProducts(products)
+            setProducts(products.slice(0,10))
         })
     }
     const getCategories = () => {
@@ -39,10 +29,31 @@ const Products = () => {
     useEffect(() => {
         getCategories()
     }, [])
-
     useEffect(() => {
         getProducts()
     }, [])
+
+   
+    const addToCart=(product)=>{
+        navigate(`/add/${product.id}`)
+    }
+    const addToFavorites=(product)=>{
+        const userEmail =Cookies.get("userEmail")
+        if(userEmail){
+            fetch("http://localhost:4000/favorites", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(product)
+        })
+            .then((res) => {
+                console.log(res)
+            })
+        }
+        
+    }
     
     return (
         <div className="products">
@@ -66,10 +77,10 @@ const Products = () => {
                    Products && Products.map((product)=> {
                         return (
                             <div key={product.id}  className="product">
-                                <img src={product.img_url} onClick={() => navigate("/add")} alt="" />
+                                <img src={product.img_url} onClick={() =>{addToCart(product)}} alt="" />
                                 <p>{product.discription}</p>
                                 <div className="btns">
-                                    <button><BiHeart /></button>
+                                    <button onClick={() =>{addToFavorites(product)}}><BiHeart /></button>
                                     <button onClick={() =>{addToCart(product)}}><BiCartAlt /></button>
                                 </div>
                             </div>
