@@ -115,6 +115,9 @@ a {
     background-color: var(--primary-color);
     border-radius: 50%;
 }
+.error{
+    color: #e20909;
+}
 
 .Hero {
     width: 80%;
@@ -246,6 +249,15 @@ a {
     border-radius: 5px;
     font-size: 1.2rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
+}
+.seeAll{
+    text-align: center;
+}
+.seeAll button{
+    padding: 1em 3em;
+    background-color: var(--mongoose);
+    border: none;
+    border-radius: 5px;
 }
 
 .tables {
@@ -495,8 +507,11 @@ a {
 }
 .Product-info .heart-icon{
     font-size: 1.5rem;
-    position: absolute;
-    right: .5em;
+    /* position: absolute; */
+    /* right: .5em; */
+}
+.Product-info .heart-icon:hover{
+    color: red;
 }
 
 .prroduct img {
@@ -542,7 +557,7 @@ a {
     padding:0 1em;
 }
 .addToCart {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 1em 0;
     display: flex;
@@ -551,7 +566,7 @@ a {
 }
 
 .addToCart .product-image {
-    width: 50%;
+    width: 40%;
 }
 
 .quantity {
@@ -666,6 +681,10 @@ a {
     align-items: center;
     text-align: center;
     /* background-color: #882a2aad; */
+}
+.compelete-button {
+    position: absolute;
+    bottom: 10%;
 }
 .contain{
     width: 50%;

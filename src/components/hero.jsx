@@ -3,7 +3,7 @@ const Hero = () => {
     return ( 
         <div className="Hero">
             <div className="text">
-                <h1>REEERERE</h1>
+                <h1>The Cave Coffe</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                  vulputate libero et velit interdum, ac aliquet
                  consectetur adipiscing elit. Nunc

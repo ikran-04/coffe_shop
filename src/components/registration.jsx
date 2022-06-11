@@ -1,4 +1,6 @@
 import {useState} from 'react';
+import Cookies from "js-cookie";
+
 
 const Register = () => {
     const [fullName, setfullName] = useState();
@@ -19,6 +21,9 @@ const Register = () => {
 
     }
     const handleSubmit = (fullName,email,password) => {
+        Cookies.set("userName",fullName)
+        Cookies.set("userEmail",email)
+        Cookies.set("userPassword",password)
         console.log( fullName,email,password)
         fetch("http://localhost:4000/users", {
             method: 'POST',

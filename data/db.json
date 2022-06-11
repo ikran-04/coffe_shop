@@ -3,22 +3,25 @@
     {
       "id": 1,
       "img_url": "/images/products/pr1.jpg",
-      "title": "ice coffe",
+      "title": "fruit ice tea",
       "discription": "this ice coffe is made up only coffe and milk",
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
       "price": 2
     },
     {
       "id": 2,
       "img_url": "/images/products/pr2.jpg",
-      "title": "coffe",
+      "title": "ice coffe",
       "discription": "this ice coffe is made up only coffe and milk",
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
       "price": 1
     },
     {
       "id": 3,
       "img_url": "/images/products/pr3.jpg",
       "title": "Chocolate Cake",
-      "discription": "this ice coffe is made up only coffe and milk",
+      "discription": "Chocolate cake is made with chocolate. It can ",
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
       "price": 1
     },
     {
@@ -26,62 +29,71 @@
       "img_url": "/images/products/pr4.jpg",
       "title": "MilkShake",
       "discription": "this ice coffe is made up only coffe and milk",
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
       "price": 1
     },
     {
       "id": 5,
       "img_url": "/images/products/pr5.jpg",
-      "title": "Cake",
+      "title": "Multigrain Bread",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 2
     },
     {
       "id": 6,
       "img_url": "/images/products/pr6.png",
       "title": "Bread",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 4
     },
     {
       "id": 7,
       "img_url": "/images/products/pr7.jpg",
       "title": "Doughnut",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 3
     },
     {
       "id": 8,
       "img_url": "/images/products/pr8.jpg",
       "title": "Bread",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 2.5
     },
     {
       "id": 9,
       "img_url": "/images/products/pr9.jpg",
-      "title": "Bread",
+      "title": "milk&doughnut",
       "discription": "this ice coffe is made up only coffe and milk",
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
       "price": 1
     },
     {
       "id": 10,
       "img_url": "/images/products/pr10.jpg",
-      "title": "Bread",
+      "title": "starbucks",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 3.4
     },
     {
       "id": 11,
       "img_url": "/images/products/pr11.jpg",
-      "title": " cake",
+      "title": " chai",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 1.2
     },
     {
       "id": 12,
       "img_url": "/images/products/pr12.jpg",
       "title": "strawberry cake",
       "discription": "this ice coffe is made up only coffe and milk",
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
       "price": 1
     },
     {
@@ -89,34 +101,39 @@
       "img_url": "/images/products/pr13.jpg",
       "title": "Herbal Tea",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 4.5
     },
     {
       "id": 14,
       "img_url": "/images/products/pr14.jpg",
       "title": "chocolate milkshake ",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 2
     },
     {
       "id": 15,
       "img_url": "/images/products/pr15.jpg",
-      "title": "Bread",
+      "title": "milk & chocolate",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 3
     },
     {
       "id": 16,
       "img_url": "/images/products/pr16.jpg",
       "title": "Butter Cake",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 4
     },
     {
       "id": 17,
       "img_url": "/images/products/pr17.jpg",
       "title": "Cold brew coffee",
       "discription": "this ice coffe is made up only coffe and milk",
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
       "price": 1
     },
     {
@@ -124,20 +141,23 @@
       "img_url": "/images/products/pr18.jpg",
       "title": "Latte coffee",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 7
     },
     {
       "id": 19,
       "img_url": "/images/products/pr19.jpg",
       "title": "Rhubarb Mint Tea",
       "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 3
     },
     {
       "id": 20,
       "img_url": "/images/products/pr20.jpg",
-      "title": "Bread",
+      "title": "Affogato",
       "discription": "this ice coffe is made up only coffe and milk",
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
       "price": 1
     }
   ],
@@ -187,39 +207,25 @@
       "url": "images/categories/banner4.jpg"
     }
   ],
-  "cart": [
-    {
-      "id": 2,
-      "img_url": "/images/products/pr2.jpg",
-      "title": "coffe",
-      "discription": "this ice coffe is made up only coffe and milk",
-      "price": 1
-    }
-  ],
+  "cart": [],
   "users": [
     {
       "userName": "ikran",
       "email": "hikraan581@gmail.com",
       "password": "123",
       "id": 1
-    },
-    {
-      "userName": "ifrah",
-      "email": "ifrah121@gmail.com",
-      "password": "147852",
-      "id": 2
     }
   ],
   "favorites": [],
   "orders": [
-    [
-      {
-        "id": 2,
-        "img_url": "/images/products/pr2.jpg",
-        "title": "coffe",
-        "discription": "this ice coffe is made up only coffe and milk",
-        "price": 1
-      }
-    ]
+    {
+      "id": 10,
+      "img_url": "/images/products/pr10.jpg",
+      "title": "starbucks",
+      "discription": "this ice coffe is made up only coffe and milk",
+      "details": "Chocolate cake is made with chocolate. It can also include other ingredients. These include fudge, vanilla creme, and other sweeteners. The history of chocolate cake goes back to the 17th century, when cocoa powder  from the Americas was added to traditional cake recipes In 1828, Coenraad van Houten of the Netherlands developed a mechanical ",
+      "price": 3.4,
+      "quantity": 1
+    }
   ]
 }

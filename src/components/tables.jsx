@@ -22,24 +22,24 @@ const Tables = () => {
                     <div className="barista">
                             <img src="images/our-barista/barista2.jpg" alt="" />
                         <div className="barista-detail">
-                            <h2>john tony</h2>
-                             <h5> tea brewer</h5>
+                            <h2>Emma William</h2>
+                             <h5>  pastry chef </h5>
                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div className="barista">
                             <img src="images/our-barista/barista3.jpg" alt="" />
                         <div className="barista-detail">
-                            <h2>john tony</h2>
-                             <h5> tea brewer</h5>
+                            <h2>Isabella James</h2>
+                             <h5>Barista</h5>
                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div className="barista">
                             <img src="images/our-barista/barista4.jpg" alt="" />
                         <div className="barista-detail">
-                            <h2>john tony</h2>
-                             <h5> tea brewer</h5>
+                            <h2>Noah Liam</h2>
+                             <h5> coffee cherry</h5>
                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>

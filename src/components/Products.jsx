@@ -3,11 +3,32 @@ import '../styles/allCss.css';
 import { BiHeart, BiCartAlt } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom';
 import Cookies from "js-cookie";
+import Modal from 'react-modal';
+import {AiOutlineClose} from "react-icons/ai"
+
 const Products = () => {
     const navigate = useNavigate();
     const [Categories, setCategories] = useState()
     const [Products, setProducts] = useState()
+    const userEmail =Cookies.get("userEmail")
+    let subtitle;
+    const [modalIsOpen, setIsOpen] =useState(false);
+    const [error, setError]=useState();
+    const[users ,setUsers]=useState();
 
+
+
+    function openModal() {
+        setIsOpen(true);
+      }
+    
+      function afterOpenModal() {
+        subtitle.style.color = '#f00';
+      }
+    
+      function closeModal() {
+        setIsOpen(false);
+      }
     const getProducts = () => {
         fetch("http://localhost:4000/products")
         .then((res) => {
@@ -35,8 +56,24 @@ const Products = () => {
 
    
     const addToCart=(product)=>{
+        if(userEmail){
         navigate(`/add/${product.id}`)
+        }
+        else{
+            openModal()
+        }
     }
+    const getUser = () => {
+        fetch("http://localhost:4000/users")
+        .then((res) => {
+            return res.json()
+        }).then(users => {
+            setUsers(users)
+        })
+      }
+        useEffect(() => {
+          getUser()
+      }, [])
     const addToFavorites=(product)=>{
         const userEmail =Cookies.get("userEmail")
         if(userEmail){
@@ -54,7 +91,21 @@ const Products = () => {
         }
         
     }
+    const loginHandler=(e)=>{
+        const foundEmail = users.find(user => user.email === e.target.Email.value)
+        e.preventDefault();
+        if(foundEmail.email===e.target.Email.value &&foundEmail.password===e.target.password.value){
+           Cookies.set("userEmail",foundEmail.email)
+           Cookies.set("userId",foundEmail.id)
+           Cookies.set("userName",foundEmail.userName)
+           Cookies.set("userPassword",foundEmail.password)
+           window.location.reload(false);
     
+        }
+        else{
+          setError("some thing wrong pls check your email or password")
+        }
+      }
     return (
         <div className="products">
             <div className="categories" style={{padding:"5em 0"}}>
@@ -88,6 +139,32 @@ const Products = () => {
                     })                                                                                                                                                                                       
                 }
             </div>
+            <div>
+                <div className="seeAll">
+                    <button><a href="/products">See more</a> </button>
+                </div>
+            </div>
+            <div >
+                  <Modal  className={"modal"}
+                    isOpen={modalIsOpen}
+                    onAfterOpen={afterOpenModal}
+                    onRequestClose={closeModal}
+                  >
+                    <button className="close-btn" onClick={closeModal}><AiOutlineClose/></button>
+                    {/* <div>I am a modal</div> */}
+                    <form onSubmit={(e)=> loginHandler(e)}>
+                    <h1 style={{textAlign:"center"}}>LOGIN</h1>
+                    <p className="error">{error}</p>
+                      <label htmlFor="email">Email or Phone</label>
+                      <input type="text" name="email" id="Email" />
+                      <label htmlFor="password">Paswsord</label>
+                      <input type="password" name="password" id="password" />
+                      <a href="/">forget Password</a>
+                      <button type="submit">LOGIN</button>
+                      <p  style={{textAlign:"center"}}>not a member? <a href="/registration" >SIGN UP</a></p>
+                    </form>
+                  </Modal>
+                     </div>
         </div>
     );
 }

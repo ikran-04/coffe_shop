@@ -104,6 +104,7 @@ const AddToCart = () => {
             </div>
             <div className="desciption">
                 <p>{found.discription}</p>
+                <p>{found.details}</p>
                 <div className="quantity">
                     <h4>quantity</h4>
                     <button ><span id="quantity">{counter}</span>

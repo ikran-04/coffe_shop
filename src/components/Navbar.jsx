@@ -16,6 +16,7 @@ const Navbar = () => {
     let subtitle;
     const [modalIsOpen, setIsOpen] =useState(false);
     const[users ,setUsers]=useState();
+    const [error, setError]=useState()
     const goToCart =()=>{
       // navigate('/cart')
     }
@@ -50,18 +51,25 @@ const Navbar = () => {
   const loginHandler=(e)=>{
     const foundEmail = users.find(user => user.email === e.target.Email.value)
     e.preventDefault();
-    if(foundEmail.email===e.target.Email.value){
-       Cookies.set("userEmail",foundEmail.userName)
+    if(foundEmail.email===e.target.Email.value &&foundEmail.password===e.target.password.value){
+       Cookies.set("userEmail",foundEmail.email)
+       Cookies.set("userId",foundEmail.id)
+       Cookies.set("userName",foundEmail.userName)
+       Cookies.set("userPassword",foundEmail.password)
        window.location.reload(false);
 
     }
     else{
-      console.log('we don get it')
+      setError("some thing wrong pls check your email or password")
     }
   }
 
+  // const userEmail =Cookies.get("userData")
   const userEmail =Cookies.get("userEmail")
-  console.log(userEmail)
+  const userid =Cookies.get("userId")
+  const userpassword =Cookies.get("userPassword")
+  const userName =Cookies.get("userName")
+  
 
     return ( 
         <>
@@ -77,7 +85,7 @@ const Navbar = () => {
             <div className="nav-btns">
                 <button className="shop-btn"><a href='/favorites' ><BiHeart/></a></button>
                <button className="shop-btn"><a href='/cart' ><BsFillHandbagFill/></a></button>
-                { userEmail ?<div className="user-account"><div className="image"></div> <a href="/">{userEmail}</a></div> : <button className="login" onClick={openModal}>Login</button>}
+                { userName ?<div className="user-account"><div className="image"></div> <a href="/">{userName}</a></div> : <button className="login" onClick={openModal}>Login</button>}
             </div>
             <div className="menu-btn">
                 <AiOutlineBars/>
@@ -93,6 +101,7 @@ const Navbar = () => {
                     {/* <div>I am a modal</div> */}
                     <form onSubmit={(e)=> loginHandler(e)}>
                     <h1 style={{textAlign:"center"}}>LOGIN</h1>
+                      <p className='error'>{error}</p>
                       <label htmlFor="email">Email or Phone</label>
                       <input type="text" name="email" id="Email" />
                       <label htmlFor="password">Paswsord</label>
